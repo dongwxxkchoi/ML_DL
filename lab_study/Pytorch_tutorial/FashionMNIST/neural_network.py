@@ -13,6 +13,7 @@ class NeuralNetwork11(nn.Module):
             nn.Linear(28 * 28, 512), # hidden
             nn.ReLU(),
             nn.Linear(512, 10), # output
+            print()
         )
     def forward(self, x):
         x = self.flatten(x)
